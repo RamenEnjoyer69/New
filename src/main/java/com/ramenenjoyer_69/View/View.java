@@ -1,6 +1,5 @@
 package com.ramenenjoyer_69.View;
 
-import com.ramenenjoyer_69.Controller.ProductController;
 import java.util.Scanner;
 
 public class View {
@@ -23,25 +22,25 @@ public class View {
 
             switch (choice) {
                 case "W":
-                    ProductController.addProduct();
+//                    ProductController.addProduct();
                     break;
                 case "R":
-                    ProductController.showProducts();
+//                    ProductController.showProducts();
                     break;
                 case "U":
-                    ProductController.updateProduct();
+//                    ProductController.updateProduct();
                     break;
                 case "D":
-                    ProductController.deleteProduct();
+//                    ProductController.deleteProduct();
                     break;
                 case "S":
-                    ProductController.searchProduct();
+//                    ProductController.searchProduct();
                     break;
                 case "SA":
-                    ProductController.saveProducts();
+//                    ProductController.saveProducts();
                     break;
                 case "SU":
-                    ProductController.showUnsavedProducts();
+//                    ProductController.showUnsavedProducts();
                     break;
                     case "E":
                     System.out.println("Exiting...");
