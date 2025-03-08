@@ -6,7 +6,7 @@ import java.util.Scanner;
 public class Validator {
     static Scanner scanner = new Scanner(System.in);
     // Method to validate name (Allows letters, numbers, and spaces)
-    private static String validateName() {
+    public static String validateName() {
         while (true) {
             System.out.print("\nEnter Product Name: ");
             String name = scanner.nextLine().trim();
@@ -20,7 +20,7 @@ public class Validator {
     }
 
     // Method to validate price (Only numbers or decimals)
-    private static BigDecimal validatePrice() {
+    public static BigDecimal validatePrice() {
         while (true) {
             System.out.print("Enter Unit Price: ");
             String priceInput = scanner.nextLine().replace(",", "."); // Convert comma to dot
@@ -34,7 +34,7 @@ public class Validator {
     }
 
     // Method to validate quantity (Only positive integers)
-    private static int validateQuantity() {
+    public static int validateQuantity() {
         while (true) {
             System.out.print("Enter Quantity: ");
             String quantityInput = scanner.nextLine();

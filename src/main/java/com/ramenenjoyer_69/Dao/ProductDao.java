@@ -49,7 +49,7 @@ public class ProductDao {
     }
 
     public static void getAllProducts() {
-        String sql = "SELECT * FROM productTbl";
+        String sql = "SELECT id, name, unit_price, quantity, import_date FROM productTbl";
 
         try (Connection conn = DatabaseConnection.getConnection();
              Statement stmt = conn.createStatement();
@@ -62,7 +62,7 @@ public class ProductDao {
                         rs.getString("name"),
                         rs.getDouble("unit_price"),
                         rs.getInt("quantity"),
-                        rs.getTimestamp("import_date"));
+                        rs.getDate("import_date").toString()); // Format as YYYY-MM-DD
             }
         } catch (SQLException e) {
             e.printStackTrace();
